@@ -1,0 +1,632 @@
+@import "mixins.scss";
+
+$browser-context: 16;
+
+@function em($pixels, $context: $browser-context) {
+    @return #{$pixels / $context}em;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+}
+
+ul {
+    @include ul-zero;
+}
+
+img {
+    @include img-responsive;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input,
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.wrapper {
+    width: 1084px;
+    margin: 0 auto;
+    position: relative;
+    @include clearfix;
+}
+
+.border-btn {
+    color: #78bb32;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    border: 1px solid #78bb32;
+    border-radius: 5px;
+    text-align: center;
+    padding: 11px 0;
+    margin-bottom: 93px;
+    transition: color 600ms ease, border-color 600ms ease;
+    background: transparent;
+    &:hover {
+        color: #313a4d;
+        border: 1px solid #313a4d;
+    }
+}
+
+// .green-btn {
+
+//     padding: 9px 0;
+//     background-color: #fff;
+//     color: #fff;
+//     background-image: -webkit-linear-gradient(bottom, #63a020 0%, #80c534 100%);
+//     background-image: -o-linear-gradient(bottom, #63a020 0%, #80c534 100%);
+//     background-image: linear-gradient(to top, #63a020 0%, #80c534 100%);
+//     border-radius: 5px;
+//     box-shadow: 0.5px 0.9px 1px rgba(2, 3, 3, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+//     
+//     transition: color 600ms ease, border-color 600ms ease;
+// }
+
+.introduction {
+    height: 669px;
+    background: url("../images/slider-bg.jpg") no-repeat transparent center 0;
+    color: #fff;
+    margin-bottom: 50px;
+    & h1 {
+        font-size: 54px;
+        font-weight: 100;
+        padding-top: 56px;
+        width: 569px;
+        line-height: 1.2;
+        margin-bottom: 33px;
+    }
+    & h2 {
+        font-weight: 400;
+        font-size: 24px;
+        width: 623px;
+        margin-bottom: 41px;
+    }
+    & p {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        width: 700px;
+        &:first-of-type {
+            margin-bottom: 45px;
+        }
+        &:last-of-type {
+            margin-bottom: 22px;
+        }
+    }
+    .border-btn {
+        display: block;
+        width: 210px;
+    }
+}
+
+.features {
+    margin-bottom: 62px;
+    p {
+        color: #010101;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        &:last-of-type {
+            margin-bottom: 30px;
+        }
+    }
+    & h2 {
+        font-size: 44px;
+        color: #78bb32;
+        margin-bottom: 29px;
+    }
+    & .features-list {
+        @include clearfix;
+    }
+    & .features-item {
+        width: 348px;
+        float: left;
+        margin-right: 20px;
+        & h3 {
+            margin-top: 21px;
+            margin-bottom: 9px;
+            color: #78bb32;
+            font-size: 26px;
+        }
+        &:last-of-type {
+            margin-right: 0;
+        }
+        & .item-list {
+            width: 325px;
+            & li {
+                margin-bottom: 13px;
+                & u {
+                    color: #78bb32;
+                    & .underline {
+                        color: #010101;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.technologies {
+    background-color: #f2f2f2;
+    padding-top: 31px;
+    padding-bottom: 54px;
+}
+
+.technologies-item {
+    display: inline-block;
+}
+
+.sprite {
+    background: url("../images/science-sprites.png") no-repeat;
+    display: block;
+    &.cplus {
+        width: 55px;
+        height: 61px;
+        background-position: 0 -152px;
+        margin-right: 27px;
+        margin-bottom: -6px;
+    }
+    &.ftn {
+        width: 67px;
+        height: 66px;
+        background-position: 0 0;
+        margin-right: 12px;
+        margin-bottom: -6px;
+    }
+    &.java {
+        width: 36px;
+        height: 66px;
+        background-position: 0 -76px;
+        margin-right: 28px;
+    }
+    &.matlab {
+        width: 114px;
+        height: 45px;
+        background-position: -65px -168px;
+        margin-right: 26px;
+    }
+    &.nvidia {
+        width: 58px;
+        height: 66px;
+        background-position: -195px -67px;
+        margin-bottom: -8px;
+        margin-right: 26px;
+    }
+    &.opencl {
+        width: 65px;
+        height: 62px;
+        background-position: -190px -151px;
+        margin-right: 29px;
+        margin-bottom: -5px;
+    }
+    &.postgresql {
+        width: 96px;
+        height: 75px;
+        background-position: -77px 0;
+    }
+    &.python {
+        width: 139px;
+        height: 40px;
+        background-position: -46px -85px;
+        margin-right: 27px;
+        margin-bottom: 7px;
+    }
+    &.rlogo {
+        width: 72px;
+        height: 57px;
+        background-position: -183px 0;
+        margin-right: 29px;
+    }
+    &.oracle {
+        width: 112px;
+        height: 23px;
+        background-position: -65px -135px;
+        margin-right: 28px;
+        margin-bottom: 16px;
+    }
+}
+
+.question {
+    background: #313a4e;
+    padding-top: 14px;
+    text-align: center;
+}
+
+.feedback {
+    & h2 {
+        font-size: 42px;
+        color: #78bb32;
+        margin-bottom: 21px;
+    }
+    & p {
+        color: #fff;
+        font-size: 18px;
+        margin: auto;
+        &:first-of-type {
+            width: 415px;
+            margin-bottom: 15px;
+        }
+        &:last-of-type {
+            margin-bottom: 15px;
+        }
+    }
+    & input {
+        display: block;
+        margin: auto;
+        margin-bottom: 26px;
+        width: 713px;
+        height: 46px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0.5px 0.9px 0 rgba(2, 3, 3, 0.02), inset 0 1px 1px rgba(2, 3, 3, 0.2);
+        border: none;
+        padding: 0 15px;
+    }
+    & textarea {
+        display: block;
+        margin: auto;
+        margin-bottom: 28px;
+        width: 713px;
+        height: 108px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0.5px 0.9px 0 rgba(2, 3, 3, 0.02), inset 0 1px 1px rgba(2, 3, 3, 0.2);
+        border: none;
+        resize: none;
+        padding: 10px 15px;
+    }
+    .greenBtn {
+        width: 152px;
+        margin-bottom: 41px;
+        border: none;
+        font-size: 17px;
+        height: 42px;
+    }
+}
+
+.knowledge {
+    color: #464f5c;
+    padding-top: 32px;
+    .platform-list {
+        font-size: 0;
+        margin-bottom: 48px;
+    }
+    .platform-item {
+        display: inline-block;
+        color: #78bb32;
+        font-size: 24px;
+        .sprite-desc {
+            float: right;
+            margin-top: 7px;
+            margin-left: 6px;
+        }
+    }
+    h3 {
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 14px;
+    }
+    p {
+        line-height: 1.7;
+        width: 92%;
+        &:first-of-type {
+            margin-bottom: 9px;
+        }
+        &:last-of-type {
+            margin-bottom: 43px;
+        }
+    }
+    .capability-list {
+        margin-bottom: 51px;
+        &:last-of-type {
+            margin-bottom: 38px;
+        }
+    }
+    .capability-item {
+        padding-left: 17px;
+        margin-bottom: 15px;
+        &:before {
+            content: '';
+            width: 7px;
+            height: 7px;
+            background: #78bb32;
+            border-radius: 50%;
+            float: left;
+            margin-left: -14px;
+            margin-top: 8px;
+        }
+    }
+}
+
+.sprite-platform {
+    background: url("../images/sprites-green.png") no-repeat;
+    display: inline-block;
+}
+
+.icn_database {
+    width: 35px;
+    height: 44px;
+    background-position: -137px -201px;
+    margin-left: 142px;
+}
+
+.icn_desktop {
+    width: 66px;
+    height: 44px;
+    background-position: -66px -201px;
+    margin-left: 157px;
+}
+
+.icn_mobile {
+    width: 27px;
+    height: 44px;
+    background-position: -84px -152px;
+    margin-left: 164px;
+}
+
+.icn_web {
+    width: 56px;
+    height: 44px;
+    background-position: -116px -152px;
+    margin-left: 35px;
+}
+
+.life-science-contacts {
+    height: 189px;
+    background: #313a4e;
+    .left-col {
+        width: 50%;
+        float: left;
+        img {
+            float: left;
+            margin-top: 21px;
+        }
+        .contacts-list {
+            font-size: 17px;
+            color: #fff;
+            li {
+                margin-left: 161px;
+                margin-bottom: 15px;
+                &:first-of-type {
+                    font-weight: 700;
+                    margin-top: 24px;
+                }
+                & a {
+                    color: #fff;
+                    text-decoration: none;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .right-col {
+        width: 50%;
+        float: left;
+        p {
+            color: #fff;
+            margin-left: 109px;
+            margin-top: 26px;
+        }
+        .telephone-form {
+            input {
+                width: 247px;
+                height: 46px;
+                border-radius: 5px;
+                box-shadow: 0.5px 0.9px 0 rgba(2, 3, 3, 0.02), inset 0 1px 1px rgba(2, 3, 3, 0.2);
+                margin-left: 110px;
+                margin-top: 30px;
+                margin-right: 16px;
+                border: none;
+                padding: 0 15px;
+            }
+            button {
+                width: 163px;
+            }
+        }
+    }
+}
+
+.needs {
+    background: #f2f2f2;
+    h2 {
+        font-size: 33px;
+        font-weight: 400;
+        color: #78bb32;
+        line-height: 0.1;
+        margin-bottom: 59px;
+    }
+    .needs-item {
+        width: 387px;
+        display: inline-block;
+        margin-left: 47px;
+        margin-bottom: 46px;
+        @include clearfix;
+        &:nth-of-type(even) {
+            margin-left: 156px;
+        }
+    }
+    .sprite-platform {
+        float: left;
+    }
+    .needs-descr {
+        float: left;
+        line-height: 1.8;
+    }
+}
+
+.chooselisticon-1 {
+    width: 75px;
+    height: 86px;
+    background-position: -97px 0;
+    margin-right: 21px;
+    & + .needs-descr {
+        margin-top: 10px;
+        width: 237px;
+    }
+}
+
+.chooselisticon-2 {
+    width: 80px;
+    height: 72px;
+    background-position: -92px -250px;
+    margin-bottom: 7px;
+    margin-right: 24px;
+    & + .needs-descr {
+        width: 283px;
+    }
+}
+
+.chooselisticon-3 {
+    width: 86px;
+    height: 86px;
+    background-position: 0 0;
+    margin-left: -7px;
+    margin-right: 15px;
+    & + .needs-descr {
+        width: 289px;
+        margin-top: 10px;
+        margin-left: 3px;
+    }
+}
+
+.chooselisticon-4 {
+    width: 79px;
+    height: 87px;
+    background-position: 0 -91px;
+    & + .needs-descr {
+        width: 237px;
+        margin-top: 23px;
+        margin-left: 26px;
+    }
+}
+
+.chooselisticon-5 {
+    width: 86px;
+    height: 76px;
+    background-position: 0 -250px;
+    margin-top: -4px;
+    margin-left: -5px;
+    & + .needs-descr {
+        width: 237px;
+        margin-top: 14px;
+        margin-left: 15px;
+    }
+}
+
+.chooselisticon-6 {
+    width: 86px;
+    height: 56px;
+    background-position: -86px -91px;
+    margin-top: -21px;
+    margin-left: -3px;
+    & + .needs-descr {
+        width: 281px;
+        margin-top: -9px;
+        margin-left: 20px;
+    }
+}
+
+.review {
+    background: url("../images/review-bg.jpg") no-repeat transparent scroll center 0%;
+    margin-top: 37px;
+    margin-bottom: 36px;
+    p, img {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    .review-text {
+        width: 520px;
+        font-size: 17px;
+        font-weight: 600;
+        font-style: italic;
+        line-height: 1.6;
+        color: #454e5c;
+        margin-bottom: 32px;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 165px;
+            background: url("../images/sprites-green.png") no-repeat;
+            display: block;
+            width: 61px;
+            height: 61px;
+            background-position: 0 -183px;
+        }
+    }
+    .reviewers-name {
+        font-weight: 600;
+        color: #2f343d;
+        font-size: 17px;
+    }
+    .reviewers-position {
+        font-size: 13px;
+        margin-bottom: 28px;
+    }
+}
+
+.life-sciences-page {
+    .preFooter .wrapper {
+        width: 1084px;
+        h2 {
+            font-weight: 700;
+        }
+    }
+    .callUsWrap {
+        box-shadow: none;
+    }
+    &.typicalServiceContentWrap .callUsWrap {
+        box-shadow: none;
+    }
+    .servicesItem {
+        width: 256px;
+        height: 231px;
+    }
+    .subcsribeNewsField {
+        background-image: url("http://cdn.wave-access.com/images/subcsribeNewsField-icon.png");
+    }
+    .preFooter span.greenBtn {
+        height: 35px;
+    }
+    .subcsribeNewsField {
+        width: 250px;
+    }
+}
