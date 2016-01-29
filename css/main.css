@@ -1,514 +1,448 @@
-*,
-*:before,
-*:after {
-  box-sizing: border-box; }
-
-html {
-  font-size: 100%; }
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 100%; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-  margin: 0; }
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-img {
-  height: auto;
-  max-width: 100%;
-  width: auto\9; }
-
-button {
-  cursor: pointer;
-  border: none; }
-
-input:focus,
-textarea:focus,
-button:focus {
-  outline: none; }
-
-input,
-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; }
-
-.wrapper {
-  width: 1084px;
-  margin: 0 auto;
-  position: relative; }
-  .wrapper:after {
-    content: "";
-    display: table;
-    clear: both; }
-
-.border-btn {
-  color: #78bb32;
-  font-size: 15px;
-  font-weight: 700;
-  font-style: italic;
-  border: 1px solid #78bb32;
-  border-radius: 5px;
-  text-align: center;
-  padding: 11px 0;
-  margin-bottom: 93px;
-  -webkit-transition: color 600ms ease, border-color 600ms ease;
-          transition: color 600ms ease, border-color 600ms ease;
-  background: transparent; }
-  .border-btn:hover {
-    color: #313a4d;
-    border: 1px solid #313a4d; }
-
-.introduction {
-  height: 669px;
-  background: url("../images/slider-bg.jpg") no-repeat transparent center 0;
-  color: #fff;
-  margin-bottom: 50px; }
-  .introduction h1 {
-    font-size: 54px;
-    font-weight: 100;
-    padding-top: 56px;
-    width: 569px;
-    line-height: 1.2;
-    margin-bottom: 33px; }
-  .introduction h2 {
-    font-weight: 400;
-    font-size: 24px;
-    width: 623px;
-    margin-bottom: 41px; }
-  .introduction p {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 400;
-    width: 700px; }
-    .introduction p:first-of-type {
-      margin-bottom: 45px; }
-    .introduction p:last-of-type {
-      margin-bottom: 22px; }
-  .introduction .border-btn {
-    display: block;
-    width: 210px; }
-
-.features {
-  margin-bottom: 62px; }
-  .features p {
-    color: #010101;
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 10px; }
-    .features p:last-of-type {
-      margin-bottom: 30px; }
-  .features h2 {
-    font-size: 44px;
-    color: #78bb32;
-    margin-bottom: 29px; }
-  .features .features-list:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .features .features-item {
-    width: 348px;
-    float: left;
-    margin-right: 20px; }
-    .features .features-item h3 {
-      margin-top: 21px;
-      margin-bottom: 9px;
-      color: #78bb32;
-      font-size: 26px; }
-    .features .features-item:last-of-type {
-      margin-right: 0; }
-    .features .features-item .item-list {
-      width: 325px; }
-      .features .features-item .item-list li {
-        margin-bottom: 13px; }
-        .features .features-item .item-list li u {
-          color: #78bb32; }
-          .features .features-item .item-list li u .underline {
-            color: #010101; }
-
-.technologies {
-  background-color: #f2f2f2;
-  padding-top: 31px;
-  padding-bottom: 54px; }
-
-.technologies-item {
-  display: inline-block; }
-
-.sprite {
-  background: url("../images/science-sprites.png") no-repeat;
-  display: block; }
-  .sprite.cplus {
-    width: 55px;
-    height: 61px;
-    background-position: 0 -152px;
-    margin-right: 27px;
-    margin-bottom: -6px; }
-  .sprite.ftn {
-    width: 67px;
-    height: 66px;
-    background-position: 0 0;
-    margin-right: 12px;
-    margin-bottom: -6px; }
-  .sprite.java {
-    width: 36px;
-    height: 66px;
-    background-position: 0 -76px;
-    margin-right: 28px; }
-  .sprite.matlab {
-    width: 114px;
-    height: 45px;
-    background-position: -65px -168px;
-    margin-right: 26px; }
-  .sprite.nvidia {
-    width: 58px;
-    height: 66px;
-    background-position: -195px -67px;
-    margin-bottom: -8px;
-    margin-right: 26px; }
-  .sprite.opencl {
-    width: 65px;
-    height: 62px;
-    background-position: -190px -151px;
-    margin-right: 29px;
-    margin-bottom: -5px; }
-  .sprite.postgresql {
-    width: 96px;
-    height: 75px;
-    background-position: -77px 0; }
-  .sprite.python {
-    width: 139px;
-    height: 40px;
-    background-position: -46px -85px;
-    margin-right: 27px;
-    margin-bottom: 7px; }
-  .sprite.rlogo {
-    width: 72px;
-    height: 57px;
-    background-position: -183px 0;
-    margin-right: 29px; }
-  .sprite.oracle {
-    width: 112px;
-    height: 23px;
-    background-position: -65px -135px;
-    margin-right: 28px;
-    margin-bottom: 16px; }
-
-.question {
-  background: #313a4e;
-  padding-top: 14px;
-  text-align: center; }
-
-.feedback h2 {
-  font-size: 42px;
-  color: #78bb32;
-  margin-bottom: 21px; }
-
-.feedback p {
-  color: #fff;
-  font-size: 18px;
-  margin: auto; }
-  .feedback p:first-of-type {
-    width: 415px;
-    margin-bottom: 15px; }
-  .feedback p:last-of-type {
-    margin-bottom: 15px; }
-
-.feedback input {
-  display: block;
-  margin: auto;
-  margin-bottom: 26px;
-  width: 713px;
-  height: 46px;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 0.5px 0.9px 0 rgba(2, 3, 3, 0.02), inset 0 1px 1px rgba(2, 3, 3, 0.2);
-  border: none;
-  padding: 0 15px; }
-
-.feedback textarea {
-  display: block;
-  margin: auto;
-  margin-bottom: 28px;
-  width: 713px;
-  height: 108px;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 0.5px 0.9px 0 rgba(2, 3, 3, 0.02), inset 0 1px 1px rgba(2, 3, 3, 0.2);
-  border: none;
-  resize: none;
-  padding: 10px 15px; }
-
-.feedback .greenBtn {
-  width: 152px;
-  margin-bottom: 41px;
-  border: none;
-  font-size: 17px;
-  height: 42px; }
-
-.knowledge {
-  color: #464f5c;
-  padding-top: 32px; }
-  .knowledge .platform-list {
-    font-size: 0;
-    margin-bottom: 48px; }
-  .knowledge .platform-item {
-    display: inline-block;
-    color: #78bb32;
-    font-size: 24px; }
-    .knowledge .platform-item .sprite-desc {
-      float: right;
-      margin-top: 7px;
-      margin-left: 6px; }
-  .knowledge h3 {
-    font-weight: 700;
-    font-size: 18px;
-    margin-bottom: 14px; }
-  .knowledge p {
-    line-height: 1.7;
-    width: 92%; }
-    .knowledge p:first-of-type {
-      margin-bottom: 9px; }
-    .knowledge p:last-of-type {
-      margin-bottom: 43px; }
-  .knowledge .capability-list {
-    margin-bottom: 51px; }
-    .knowledge .capability-list:last-of-type {
-      margin-bottom: 38px; }
-  .knowledge .capability-item {
-    padding-left: 17px;
-    margin-bottom: 15px; }
-    .knowledge .capability-item:before {
-      content: '';
-      width: 7px;
-      height: 7px;
-      background: #78bb32;
-      border-radius: 50%;
-      float: left;
-      margin-left: -14px;
-      margin-top: 8px; }
-
-.sprite-platform {
-  background: url("../images/sprites-green.png") no-repeat;
-  display: inline-block; }
-
-.icn_database {
-  width: 35px;
-  height: 44px;
-  background-position: -137px -201px;
-  margin-left: 142px; }
-
-.icn_desktop {
-  width: 66px;
-  height: 44px;
-  background-position: -66px -201px;
-  margin-left: 157px; }
-
-.icn_mobile {
-  width: 27px;
-  height: 44px;
-  background-position: -84px -152px;
-  margin-left: 164px; }
-
-.icn_web {
-  width: 56px;
-  height: 44px;
-  background-position: -116px -152px;
-  margin-left: 35px; }
-
-.life-science-contacts {
-  height: 189px;
-  background: #313a4e; }
-  .life-science-contacts .left-col {
-    width: 50%;
-    float: left; }
-    .life-science-contacts .left-col img {
-      float: left;
-      margin-top: 21px; }
-    .life-science-contacts .left-col .contacts-list {
-      font-size: 17px;
-      color: #fff; }
-      .life-science-contacts .left-col .contacts-list li {
-        margin-left: 161px;
-        margin-bottom: 15px; }
-        .life-science-contacts .left-col .contacts-list li:first-of-type {
-          font-weight: 700;
-          margin-top: 24px; }
-        .life-science-contacts .left-col .contacts-list li a {
-          color: #fff;
-          text-decoration: none; }
-          .life-science-contacts .left-col .contacts-list li a:hover {
-            color: #fff; }
-  .life-science-contacts .right-col {
-    width: 50%;
-    float: left; }
-    .life-science-contacts .right-col p {
-      color: #fff;
-      margin-left: 109px;
-      margin-top: 26px; }
-    .life-science-contacts .right-col .telephone-form input {
-      width: 247px;
-      height: 46px;
-      border-radius: 5px;
-      box-shadow: 0.5px 0.9px 0 rgba(2, 3, 3, 0.02), inset 0 1px 1px rgba(2, 3, 3, 0.2);
-      margin-left: 110px;
-      margin-top: 30px;
-      margin-right: 16px;
-      border: none;
-      padding: 0 15px; }
-    .life-science-contacts .right-col .telephone-form button {
-      width: 163px; }
-
-.needs {
-  background: #f2f2f2; }
-  .needs h2 {
-    font-size: 33px;
-    font-weight: 400;
-    color: #78bb32;
-    line-height: 0.1;
-    margin-bottom: 59px; }
-  .needs .needs-item {
-    width: 387px;
-    display: inline-block;
-    margin-left: 47px;
-    margin-bottom: 46px; }
-    .needs .needs-item:after {
+.life-sciences-page {
+  font-family: 'Open Sans', sans-serif; }
+  .life-sciences-page .callUsWrap {
+    box-shadow: none; }
+  .life-sciences-page.typicalServiceContentWrap .callUsWrap {
+    box-shadow: none; }
+  .life-sciences-page h1,
+  .life-sciences-page h2,
+  .life-sciences-page h3,
+  .life-sciences-page h4,
+  .life-sciences-page h5,
+  .life-sciences-page p {
+    margin: 0; }
+  .life-sciences-page ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .life-sciences-page img {
+    height: auto;
+    max-width: 100%;
+    width: auto\9; }
+  .life-sciences-page button {
+    cursor: pointer;
+    border: none; }
+  .life-sciences-page input:focus,
+  .life-sciences-page textarea:focus,
+  .life-sciences-page button:focus {
+    outline: none; }
+  .life-sciences-page .wrapper {
+    width: 1084px;
+    margin: 0 auto;
+    position: relative; }
+    .life-sciences-page .wrapper:after {
       content: "";
       display: table;
       clear: both; }
-    .needs .needs-item:nth-of-type(even) {
-      margin-left: 156px; }
-  .needs .sprite-platform {
-    float: left; }
-  .needs .needs-descr {
-    float: left;
-    line-height: 1.8; }
-
-.chooselisticon-1 {
-  width: 75px;
-  height: 86px;
-  background-position: -97px 0;
-  margin-right: 21px; }
-  .chooselisticon-1 + .needs-descr {
-    margin-top: 10px;
-    width: 237px; }
-
-.chooselisticon-2 {
-  width: 80px;
-  height: 72px;
-  background-position: -92px -250px;
-  margin-bottom: 7px;
-  margin-right: 24px; }
-  .chooselisticon-2 + .needs-descr {
-    width: 283px; }
-
-.chooselisticon-3 {
-  width: 86px;
-  height: 86px;
-  background-position: 0 0;
-  margin-left: -7px;
-  margin-right: 15px; }
-  .chooselisticon-3 + .needs-descr {
-    width: 289px;
-    margin-top: 10px;
-    margin-left: 3px; }
-
-.chooselisticon-4 {
-  width: 79px;
-  height: 87px;
-  background-position: 0 -91px; }
-  .chooselisticon-4 + .needs-descr {
-    width: 237px;
-    margin-top: 23px;
-    margin-left: 26px; }
-
-.chooselisticon-5 {
-  width: 86px;
-  height: 76px;
-  background-position: 0 -250px;
-  margin-top: -4px;
-  margin-left: -5px; }
-  .chooselisticon-5 + .needs-descr {
-    width: 237px;
-    margin-top: 14px;
-    margin-left: 15px; }
-
-.chooselisticon-6 {
-  width: 86px;
-  height: 56px;
-  background-position: -86px -91px;
-  margin-top: -21px;
-  margin-left: -3px; }
-  .chooselisticon-6 + .needs-descr {
-    width: 281px;
-    margin-top: -9px;
-    margin-left: 20px; }
-
-.review {
-  background: url("../images/review-bg.jpg") no-repeat transparent scroll center 0%;
-  margin-top: 37px;
-  margin-bottom: 36px; }
-  .review p, .review img {
+  .life-sciences-page .border-btn {
+    color: #78bb32;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    border: 1px solid #78bb32;
+    border-radius: 5px;
+    text-align: center;
+    padding: 11px 0;
+    margin-bottom: 93px;
+    -webkit-transition: color 600ms ease, border-color 600ms ease;
+            transition: color 600ms ease, border-color 600ms ease;
+    background: transparent; }
+    .life-sciences-page .border-btn:hover {
+      color: #313a4d;
+      border: 1px solid #313a4d; }
+  .life-sciences-page .introduction {
+    height: 669px;
+    background: url("../images/slider-bg.jpg") no-repeat transparent center 0;
+    color: #fff;
+    margin-bottom: 50px; }
+    .life-sciences-page .introduction h1 {
+      font-size: 54px;
+      font-weight: 100;
+      padding-top: 56px;
+      width: 569px;
+      line-height: 1.2;
+      margin-bottom: 33px; }
+    .life-sciences-page .introduction h2 {
+      font-weight: 400;
+      font-size: 24px;
+      width: 623px;
+      margin-bottom: 41px; }
+    .life-sciences-page .introduction p {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      width: 700px; }
+      .life-sciences-page .introduction p:first-of-type {
+        margin-bottom: 45px; }
+      .life-sciences-page .introduction p:last-of-type {
+        margin-bottom: 22px; }
+    .life-sciences-page .introduction .border-btn {
+      display: block;
+      width: 210px; }
+  .life-sciences-page .features {
+    margin-bottom: 62px; }
+    .life-sciences-page .features p {
+      color: #010101;
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 10px; }
+      .life-sciences-page .features p:last-of-type {
+        margin-bottom: 30px; }
+    .life-sciences-page .features h2 {
+      font-size: 44px;
+      color: #78bb32;
+      margin-bottom: 29px; }
+    .life-sciences-page .features .features-list:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .life-sciences-page .features .features-item {
+      width: 348px;
+      float: left;
+      margin-right: 20px; }
+      .life-sciences-page .features .features-item h3 {
+        margin-top: 21px;
+        margin-bottom: 9px;
+        color: #78bb32;
+        font-size: 26px; }
+      .life-sciences-page .features .features-item:last-of-type {
+        margin-right: 0; }
+      .life-sciences-page .features .features-item .item-list {
+        width: 325px; }
+        .life-sciences-page .features .features-item .item-list li {
+          margin-bottom: 13px; }
+          .life-sciences-page .features .features-item .item-list li u {
+            color: #78bb32; }
+            .life-sciences-page .features .features-item .item-list li u .underline {
+              color: #010101; }
+  .life-sciences-page .technologies {
+    background-color: #f2f2f2;
+    padding-top: 31px;
+    padding-bottom: 54px; }
+  .life-sciences-page .technologies-item {
+    display: inline-block; }
+  .life-sciences-page .sprite {
+    background: url("../images/science-sprites.png") no-repeat;
+    display: block; }
+    .life-sciences-page .sprite.cplus {
+      width: 55px;
+      height: 61px;
+      background-position: 0 -152px;
+      margin-right: 27px;
+      margin-bottom: -6px; }
+    .life-sciences-page .sprite.ftn {
+      width: 67px;
+      height: 66px;
+      background-position: 0 0;
+      margin-right: 12px;
+      margin-bottom: -6px; }
+    .life-sciences-page .sprite.java {
+      width: 36px;
+      height: 66px;
+      background-position: 0 -76px;
+      margin-right: 28px; }
+    .life-sciences-page .sprite.matlab {
+      width: 114px;
+      height: 45px;
+      background-position: -65px -168px;
+      margin-right: 26px; }
+    .life-sciences-page .sprite.nvidia {
+      width: 58px;
+      height: 66px;
+      background-position: -195px -67px;
+      margin-bottom: -8px;
+      margin-right: 26px; }
+    .life-sciences-page .sprite.opencl {
+      width: 65px;
+      height: 62px;
+      background-position: -190px -151px;
+      margin-right: 29px;
+      margin-bottom: -5px; }
+    .life-sciences-page .sprite.postgresql {
+      width: 96px;
+      height: 75px;
+      background-position: -77px 0; }
+    .life-sciences-page .sprite.python {
+      width: 139px;
+      height: 40px;
+      background-position: -46px -85px;
+      margin-right: 27px;
+      margin-bottom: 7px; }
+    .life-sciences-page .sprite.rlogo {
+      width: 72px;
+      height: 57px;
+      background-position: -183px 0;
+      margin-right: 29px; }
+    .life-sciences-page .sprite.oracle {
+      width: 112px;
+      height: 23px;
+      background-position: -65px -135px;
+      margin-right: 28px;
+      margin-bottom: 16px; }
+  .life-sciences-page .question {
+    background: #313a4e;
+    padding-top: 14px;
+    text-align: center; }
+  .life-sciences-page .feedback h2 {
+    font-size: 42px;
+    color: #78bb32;
+    margin-bottom: 21px; }
+  .life-sciences-page .feedback p {
+    color: #fff;
+    font-size: 18px;
+    margin: auto; }
+    .life-sciences-page .feedback p:first-of-type {
+      width: 415px;
+      margin-bottom: 15px; }
+    .life-sciences-page .feedback p:last-of-type {
+      margin-bottom: 15px; }
+  .life-sciences-page .feedback input {
     display: block;
     margin: auto;
-    text-align: center; }
-  .review .review-text {
-    width: 520px;
+    margin-bottom: 26px;
+    width: 713px;
+    height: 46px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.9px 0 rgba(2, 3, 3, 0.02), inset 0 1px 1px rgba(2, 3, 3, 0.2);
+    border: none;
+    padding: 0 15px; }
+  .life-sciences-page .feedback textarea {
+    display: block;
+    margin: auto;
+    margin-bottom: 28px;
+    width: 713px;
+    height: 108px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.9px 0 rgba(2, 3, 3, 0.02), inset 0 1px 1px rgba(2, 3, 3, 0.2);
+    border: none;
+    resize: none;
+    padding: 10px 15px; }
+  .life-sciences-page .feedback .greenBtn {
+    width: 152px;
+    margin-bottom: 41px;
+    border: none;
     font-size: 17px;
-    font-weight: 600;
-    font-style: italic;
-    line-height: 1.6;
-    color: #454e5c;
-    margin-bottom: 32px; }
-    .review .review-text:before {
-      content: "";
-      position: absolute;
-      top: 3px;
-      left: 165px;
-      background: url("../images/sprites-green.png") no-repeat;
+    height: 42px; }
+  .life-sciences-page .knowledge {
+    color: #464f5c;
+    padding-top: 32px; }
+    .life-sciences-page .knowledge .platform-list {
+      font-size: 0;
+      margin-bottom: 48px; }
+    .life-sciences-page .knowledge .platform-item {
+      display: inline-block;
+      color: #78bb32;
+      font-size: 24px; }
+      .life-sciences-page .knowledge .platform-item .sprite-desc {
+        float: right;
+        margin-top: 7px;
+        margin-left: 6px; }
+    .life-sciences-page .knowledge h3 {
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 14px; }
+    .life-sciences-page .knowledge p {
+      line-height: 1.7;
+      width: 92%; }
+      .life-sciences-page .knowledge p:first-of-type {
+        margin-bottom: 9px; }
+      .life-sciences-page .knowledge p:last-of-type {
+        margin-bottom: 43px; }
+    .life-sciences-page .knowledge .capability-list {
+      margin-bottom: 51px; }
+      .life-sciences-page .knowledge .capability-list:last-of-type {
+        margin-bottom: 38px; }
+    .life-sciences-page .knowledge .capability-item {
+      padding-left: 17px;
+      margin-bottom: 15px; }
+      .life-sciences-page .knowledge .capability-item:before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        background: #78bb32;
+        border-radius: 50%;
+        float: left;
+        margin-left: -14px;
+        margin-top: 8px; }
+  .life-sciences-page .sprite-platform {
+    background: url("../images/sprites-green.png") no-repeat;
+    display: inline-block; }
+  .life-sciences-page .icn_database {
+    width: 35px;
+    height: 44px;
+    background-position: -137px -201px;
+    margin-left: 142px; }
+  .life-sciences-page .icn_desktop {
+    width: 66px;
+    height: 44px;
+    background-position: -66px -201px;
+    margin-left: 157px; }
+  .life-sciences-page .icn_mobile {
+    width: 27px;
+    height: 44px;
+    background-position: -84px -152px;
+    margin-left: 164px; }
+  .life-sciences-page .icn_web {
+    width: 56px;
+    height: 44px;
+    background-position: -116px -152px;
+    margin-left: 35px; }
+  .life-sciences-page .life-science-contacts {
+    height: 189px;
+    background: #313a4e; }
+    .life-sciences-page .life-science-contacts .left-col {
+      width: 50%;
+      float: left; }
+      .life-sciences-page .life-science-contacts .left-col img {
+        float: left;
+        margin-top: 21px; }
+      .life-sciences-page .life-science-contacts .left-col .contacts-list {
+        font-size: 17px;
+        color: #fff; }
+        .life-sciences-page .life-science-contacts .left-col .contacts-list li {
+          margin-left: 161px;
+          margin-bottom: 15px; }
+          .life-sciences-page .life-science-contacts .left-col .contacts-list li:first-of-type {
+            font-weight: 700;
+            margin-top: 24px; }
+          .life-sciences-page .life-science-contacts .left-col .contacts-list li a {
+            color: #fff;
+            text-decoration: none; }
+            .life-sciences-page .life-science-contacts .left-col .contacts-list li a:hover {
+              color: #fff; }
+    .life-sciences-page .life-science-contacts .right-col {
+      width: 50%;
+      float: left; }
+      .life-sciences-page .life-science-contacts .right-col p {
+        color: #fff;
+        margin-left: 109px;
+        margin-top: 26px; }
+      .life-sciences-page .life-science-contacts .right-col .telephone-form input {
+        width: 247px;
+        height: 46px;
+        border-radius: 5px;
+        box-shadow: 0.5px 0.9px 0 rgba(2, 3, 3, 0.02), inset 0 1px 1px rgba(2, 3, 3, 0.2);
+        margin-left: 110px;
+        margin-top: 30px;
+        margin-right: 16px;
+        border: none;
+        padding: 0 15px;
+        box-sizing: border-box; }
+      .life-sciences-page .life-science-contacts .right-col .telephone-form button {
+        width: 163px;
+        box-sizing: border-box; }
+  .life-sciences-page .needs {
+    background: #f2f2f2; }
+    .life-sciences-page .needs h2 {
+      font-size: 33px;
+      font-weight: 400;
+      color: #78bb32;
+      line-height: 0.1;
+      margin-bottom: 59px; }
+    .life-sciences-page .needs .needs-item {
+      width: 387px;
+      display: inline-block;
+      margin-left: 47px;
+      margin-bottom: 46px; }
+      .life-sciences-page .needs .needs-item:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .life-sciences-page .needs .needs-item:nth-of-type(even) {
+        margin-left: 156px; }
+    .life-sciences-page .needs .sprite-platform {
+      float: left; }
+    .life-sciences-page .needs .needs-descr {
+      float: left;
+      line-height: 1.8; }
+  .life-sciences-page .chooselisticon-1 {
+    width: 75px;
+    height: 86px;
+    background-position: -97px 0;
+    margin-right: 21px; }
+    .life-sciences-page .chooselisticon-1 + .needs-descr {
+      margin-top: 10px;
+      width: 237px; }
+  .life-sciences-page .chooselisticon-2 {
+    width: 80px;
+    height: 72px;
+    background-position: -92px -250px;
+    margin-bottom: 7px;
+    margin-right: 24px; }
+    .life-sciences-page .chooselisticon-2 + .needs-descr {
+      width: 283px; }
+  .life-sciences-page .chooselisticon-3 {
+    width: 86px;
+    height: 86px;
+    background-position: 0 0;
+    margin-left: -7px;
+    margin-right: 15px; }
+    .life-sciences-page .chooselisticon-3 + .needs-descr {
+      width: 289px;
+      margin-top: 10px;
+      margin-left: 3px; }
+  .life-sciences-page .chooselisticon-4 {
+    width: 79px;
+    height: 87px;
+    background-position: 0 -91px; }
+    .life-sciences-page .chooselisticon-4 + .needs-descr {
+      width: 237px;
+      margin-top: 23px;
+      margin-left: 26px; }
+  .life-sciences-page .chooselisticon-5 {
+    width: 86px;
+    height: 76px;
+    background-position: 0 -250px;
+    margin-top: -4px;
+    margin-left: -5px; }
+    .life-sciences-page .chooselisticon-5 + .needs-descr {
+      width: 237px;
+      margin-top: 14px;
+      margin-left: 15px; }
+  .life-sciences-page .chooselisticon-6 {
+    width: 86px;
+    height: 56px;
+    background-position: -86px -91px;
+    margin-top: -21px;
+    margin-left: -3px; }
+    .life-sciences-page .chooselisticon-6 + .needs-descr {
+      width: 281px;
+      margin-top: -9px;
+      margin-left: 20px; }
+  .life-sciences-page .review {
+    background: url("../images/review-bg.jpg") no-repeat transparent scroll center 0%;
+    margin-top: 37px;
+    margin-bottom: 36px; }
+    .life-sciences-page .review p, .life-sciences-page .review img {
       display: block;
-      width: 61px;
-      height: 61px;
-      background-position: 0 -183px; }
-  .review .reviewers-name {
-    font-weight: 600;
-    color: #2f343d;
-    font-size: 17px; }
-  .review .reviewers-position {
-    font-size: 13px;
-    margin-bottom: 28px; }
-
-.life-sciences-page .preFooter .wrapper {
-  width: 1084px; }
-  .life-sciences-page .preFooter .wrapper h2 {
-    font-weight: 700; }
-
-.life-sciences-page .callUsWrap {
-  box-shadow: none; }
-
-.life-sciences-page.typicalServiceContentWrap .callUsWrap {
-  box-shadow: none; }
-
-.life-sciences-page .servicesItem {
-  width: 256px;
-  height: 231px; }
-
-.life-sciences-page .subcsribeNewsField {
-  background-image: url("http://cdn.wave-access.com/images/subcsribeNewsField-icon.png"); }
-
-.life-sciences-page .preFooter span.greenBtn {
-  height: 35px; }
-
-.life-sciences-page .subcsribeNewsField {
-  width: 250px; }
+      margin: auto;
+      text-align: center; }
+    .life-sciences-page .review .review-text {
+      width: 520px;
+      font-size: 17px;
+      font-weight: 600;
+      font-style: italic;
+      line-height: 1.6;
+      color: #454e5c;
+      margin-bottom: 32px; }
+      .life-sciences-page .review .review-text:before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 165px;
+        background: url("../images/sprites-green.png") no-repeat;
+        display: block;
+        width: 61px;
+        height: 61px;
+        background-position: 0 -183px; }
+    .life-sciences-page .review .reviewers-name {
+      font-weight: 600;
+      color: #2f343d;
+      font-size: 17px; }
+    .life-sciences-page .review .reviewers-position {
+      font-size: 13px;
+      margin-bottom: 28px; }
 
 /*# sourceMappingURL=main.css.map */
